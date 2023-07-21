@@ -6,18 +6,19 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link rel="icon" href="/favicon.ico" />
-          <meta name="description" content="Pictures from my Travels!" />
-          <meta property="og:site_name" content="travels.jasonahern.com" />
-          <meta property="og:description" content="Pictures from my Travels!" />
-          <meta property="og:title" content="Jason's Travels" />
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Jason's Travels" />
-          <meta
-            name="twitter:description"
-            content="Pictures from my Travels!"
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Montserrat"
           />
+          <meta name="description" content="My Digital Portfolio" />
+          <meta property="og:site_name" content="jasonahern.com" />
+          <meta property="og:description" content="My Digital Portfolio" />
+          <meta property="og:title" content="Jason Ahern" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Jason Ahern" />
+          <meta name="twitter:description" content="My Digital Portfolio" />
         </Head>
-        <body className="bg-black antialiased">
+        <body>
           <Main />
           <NextScript />
         </body>
