@@ -5,7 +5,7 @@ const NavBar = () => {
   const { colorTheme, toggleColorTheme } = useColorTheme();
 
   return (
-    <nav className="flex w-full p-3 fixed top-0">
+    <nav className="flex w-full p-3 fixed top-0" id="nav-bar">
       <ul className="flex">
         <li className="mr-6">
           <a className="text-blue-500 hover:text-blue-800" href="#">
