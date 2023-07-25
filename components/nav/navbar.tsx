@@ -11,7 +11,7 @@ const NavBar = () => {
   useEffect(() => {
     const animationStart =
       window.innerWidth <= largeScreenWidthPixels
-        ? window.innerHeight / 2.0
+        ? window.innerHeight / 1.8
         : "top top";
     const element = ref.current;
     if (element) {
