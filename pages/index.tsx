@@ -3,7 +3,7 @@ import Head from "next/head";
 import NavBar from "@/components/nav/navbar";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const Home: NextPage = () => {
   gsap.registerPlugin(ScrollTrigger);
