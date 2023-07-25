@@ -1,10 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import useColorTheme from "@/hooks/useColorTheme";
-import LightModeIcon from "@/components/icons/lightModeIcon";
 import NavBar from "@/components/nav/navbar";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const Home: NextPage = () => {
+  gsap.registerPlugin(ScrollTrigger);
+
   return (
     <>
       <Head>
@@ -14,7 +17,7 @@ const Home: NextPage = () => {
       <main>
         <div>
           <NavBar />
-          <div className="h-screen flex">
+          <div className="h-screen flex" id="name-screen">
             <div className="m-auto text-5xl sm:text-6xl">Jason Ahern</div>
           </div>
           <div className="spacer h-screen"></div>
