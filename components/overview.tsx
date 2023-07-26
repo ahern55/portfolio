@@ -14,7 +14,7 @@ import {
 const Overview = () => {
   return (
     <div className="h-screen flex m-3 flex-wrap gap-0">
-      <div className="lg:ml-20 w-full md:w-1/2 h-fit">
+      <div className="lg:ml-8 xl:ml-20 w-full md:w-1/2 h-fit">
         <h1 className="text-4xl lg:text-5xl font-extrabold">
           {" "}
           Hello! I'm Jason 👋
@@ -59,8 +59,8 @@ const Overview = () => {
           </Link>
         </div>
       </div>
-      <div className="h-full m-auto lg:mr-20">
-        <div className=" w-80 lg:w-96 aspect-square relative  mt-4">
+      <div className="h-full m-auto lg:mr-8 xl:mr-20">
+        <div className="w-80 lg:w-96 aspect-square relative mt-2">
           <Image src="/images/headshot.png" alt="headshot" fill />
         </div>
       </div>
