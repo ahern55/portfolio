@@ -20,12 +20,14 @@ const NavBar = () => {
       gsap.fromTo(
         element.querySelector("#nav-bar"),
         {
+          autoAlpha: 0,
           opacity: 0,
           y: 0,
         },
         {
           opacity: 1,
           y: 0,
+          autoAlpha: 1,
           scrollTrigger: {
             start: animationStart,
             end: `+${window.innerHeight}`,
@@ -38,7 +40,11 @@ const NavBar = () => {
 
   return (
     <div ref={ref}>
-      <nav className="flex w-full p-3 fixed top-0" id="nav-bar">
+      <nav
+        className="flex w-full p-3 fixed top-0"
+        style={{ visibility: "hidden" }}
+        id="nav-bar"
+      >
         <ul className="flex">
           <NavHeader text="About" url="/about" />
           <NavHeader text="Projects" url="/projects" />

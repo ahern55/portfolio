@@ -20,9 +20,6 @@ module.exports = {
         "primary-text-highlight": colors.neutral[100],
         "primary-text-dark": colors.gray[100],
         "primary-text-highlight-dark": colors.gray[400],
-
-        link: colors.orange[900],
-        "link-dark": colors.white,
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
