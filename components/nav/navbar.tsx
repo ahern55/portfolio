@@ -3,9 +3,11 @@ import DarkModeIcon from "../icons/darkModeIcon";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { largeScreenWidthPixels } from "@/utils/screenSizes";
+import Link from "next/link";
+import NavHeader from "./navHeader";
 
 const NavBar = () => {
-  const { colorTheme, toggleColorTheme } = useColorTheme();
+  const { toggleColorTheme } = useColorTheme();
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -18,12 +20,14 @@ const NavBar = () => {
       gsap.fromTo(
         element.querySelector("#nav-bar"),
         {
+          autoAlpha: 0,
           opacity: 0,
           y: 0,
         },
         {
           opacity: 1,
           y: 0,
+          autoAlpha: 1,
           scrollTrigger: {
             start: animationStart,
             end: `+${window.innerHeight}`,
@@ -36,28 +40,15 @@ const NavBar = () => {
 
   return (
     <div ref={ref}>
-      <nav className="flex w-full p-3 fixed top-0" id="nav-bar">
+      <nav
+        className="flex w-full p-3 fixed top-0"
+        style={{ visibility: "hidden" }}
+        id="nav-bar"
+      >
         <ul className="flex">
-          <li className="mr-6">
-            <a className="text-blue-500 hover:text-blue-800" href="#">
-              Active
-            </a>
-          </li>
-          <li className="mr-6">
-            <a className="text-blue-500 hover:text-blue-800" href="#">
-              Link
-            </a>
-          </li>
-          <li className="mr-6">
-            <a className="text-blue-500 hover:text-blue-800" href="#">
-              Link
-            </a>
-          </li>
-          <li className="mr-6">
-            <a className="text-gray-400 cursor-not-allowed" href="#">
-              Disabled
-            </a>
-          </li>
+          <NavHeader text="About" url="/about" />
+          <NavHeader text="Projects" url="/projects" />
+          <NavHeader text="Github" external url="https://github.com/ahern55/" />
         </ul>
 
         <div
