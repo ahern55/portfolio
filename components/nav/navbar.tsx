@@ -3,8 +3,8 @@ import DarkModeIcon from "../icons/darkModeIcon";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { largeScreenWidthPixels } from "@/utils/screenSizes";
-import Link from "next/link";
 import NavHeader from "./navHeader";
+import { gitHubLink } from "@/data/externalLinks";
 
 const NavBar = () => {
   const { toggleColorTheme } = useColorTheme();
@@ -41,14 +41,14 @@ const NavBar = () => {
   return (
     <div ref={ref}>
       <nav
-        className="flex w-full p-3 fixed top-0"
+        className="flex w-full p-3 fixed top-0 z-50"
         style={{ visibility: "hidden" }}
         id="nav-bar"
       >
         <ul className="flex">
           <NavHeader text="About" url="/about" />
           <NavHeader text="Projects" url="/projects" />
-          <NavHeader text="Github" external url="https://github.com/ahern55/" />
+          <NavHeader text="Github" external url={gitHubLink} />
         </ul>
 
         <div

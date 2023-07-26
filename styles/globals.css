@@ -7,4 +7,16 @@
     font-family: Montserrat, system-ui, sans-serif;
     color: white;
   }
+
+  .highlight-link {
+    @apply text-primary-text hover:text-primary-text-highlight dark:text-primary-text-unhighlighted-dark dark:hover:text-primary-text-highlight-dark;
+  }
+
+  a {
+    @apply text-link hover:text-link-hover dark:text-link-dark dark:hover:text-link-dark-hover hover:underline;
+  }
+
+  * {
+    @apply underline-offset-2
+  }
 }
