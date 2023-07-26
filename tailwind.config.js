@@ -1,5 +1,12 @@
 const colors = require("tailwindcss/colors");
 
+const primaryPink = "#fbc8d4";
+const primaryPurple = "#9795f0";
+const primaryDarkBlue = colors.slate[900];
+const primaryDarkGray = colors.gray[700];
+
+const primaryWhite = colors.neutral[100];
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: "class",
@@ -11,15 +18,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "gradient-pink": "#fbc8d4",
-        "gradient-purple": "#9795f0",
-        "gradient-first-dark": colors.slate[900],
-        "gradient-second-dark": colors.gray[700],
+        "gradient-pink": primaryPink,
+        "gradient-purple": primaryPurple,
+        "gradient-first-dark": primaryDarkBlue,
+        "gradient-second-dark": primaryDarkGray,
 
-        "primary-text": colors.slate[900],
-        "primary-text-highlight": colors.neutral[100],
-        "primary-text-dark": colors.gray[100],
-        "primary-text-highlight-dark": colors.gray[400],
+        "primary-text": primaryDarkBlue,
+        "primary-text-highlight": primaryWhite,
+        "primary-text-dark": primaryWhite,
+        "primary-text-unhighlighted-dark": colors.gray[300],
+        "primary-text-highlight-dark": colors.white,
+
+        link: primaryWhite,
+        "link-hover": primaryDarkBlue,
+        "link-dark": primaryPurple,
+        "link-dark-hover": primaryPink,
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

@@ -15,7 +15,7 @@ const NavHeader = ({
       <Link
         href={url}
         target={external ? "_blank" : ""}
-        className="flex font-extrabold items-center underline-offset-2 text-primary-text hover:text-primary-text-highlight dark:text-primary-text-dark dark:hover:text-primary-text-highlight-dark hover:underline"
+        className="flex font-extrabold items-center highlight-link hover:underline"
       >
         <span className=" pr-1">{text}</span>
         {external ? <ExternalLinkIcon /> : ""}
