@@ -52,7 +52,7 @@ const NavBar = () => {
         </ul>
 
         <div
-          className="sm:mr-2 ml-auto border rounded-lg cursor-pointer border-primary-text hover:border-primary-text-highlight hover:text-primary-text-highlight dark:hover:border-primary-text-highlight-dark dark:hover:text-primary-text-highlight-dark dark:border-primary-text-dark"
+          className="sm:mr-2 ml-auto border rounded-lg cursor-pointer highlight-link-border"
           onClick={toggleColorTheme}
         >
           <DarkModeIcon />

@@ -12,11 +12,15 @@
     @apply text-primary-text hover:text-primary-text-highlight dark:text-primary-text-unhighlighted-dark dark:hover:text-primary-text-highlight-dark;
   }
 
+  .highlight-link-border {
+    @apply highlight-link border-primary-text hover:border-primary-text-highlight dark:hover:border-primary-text-highlight-dark  dark:border-primary-text-dark;
+  }
+
   a {
     @apply text-link hover:text-link-hover dark:text-link-dark dark:hover:text-link-dark-hover hover:underline;
   }
 
   * {
-    @apply underline-offset-2
+    @apply underline-offset-2;
   }
 }
