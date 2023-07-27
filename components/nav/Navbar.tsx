@@ -1,9 +1,9 @@
 import useColorTheme from "@/hooks/useColorTheme";
-import DarkModeIcon from "../icons/darkModeIcon";
+import DarkModeIcon from "../icons/DarkModeIcon";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { largeScreenWidthPixels } from "@/utils/screenSizes";
-import NavHeader from "./navHeader";
+import NavHeader from "./NavHeader";
 import { gitHubLink } from "@/data/externalLinks";
 
 const NavBar = () => {

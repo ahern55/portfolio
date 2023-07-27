@@ -16,6 +16,14 @@
     @apply highlight-link border-primary-text hover:border-primary-text-highlight dark:hover:border-primary-text-highlight-dark  dark:border-primary-text-dark;
   }
 
+  .colored-border {
+    @apply border border-primary-text dark:border-primary-text-dark;
+  }
+
+  .colored-shadow {
+    @apply shadow-2xl shadow-gradient-purple dark:shadow-gradient-first-dark;
+  }
+
   a {
     @apply text-link hover:text-link-hover dark:text-link-dark dark:hover:text-link-dark-hover hover:underline;
   }

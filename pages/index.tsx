@@ -1,9 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import NavBar from "@/components/nav/navbar";
+import NavBar from "@/components/nav/Navbar";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import Overview from "@/components/overview";
+import Overview from "@/components/Overview";
+import Timeline from "@/components/timeline/Timeline";
 
 const Home: NextPage = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -21,7 +22,7 @@ const Home: NextPage = () => {
             <div className="m-auto text-5xl sm:text-6xl">Jason Ahern</div>
           </div>
           <Overview />
-          <div className="spacer h-screen"></div>
+          <Timeline />
           <div className="spacer h-screen"></div>
           <div className="spacer h-screen"></div>
           <div className="spacer h-screen"></div>

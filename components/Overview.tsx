@@ -1,7 +1,7 @@
 import Image from "next/image";
-import InstagramIcon from "./icons/instagramIcon";
-import GitHubIcon from "./icons/gitHubIcon";
-import LinkedInIcon from "./icons/linkedInIcon";
+import InstagramIcon from "./icons/InstagramIcon";
+import GitHubIcon from "./icons/GitHubIcon";
+import LinkedInIcon from "./icons/LinkedInIcon";
 import Link from "next/link";
 import {
   gitHubLink,
@@ -13,7 +13,7 @@ import {
 
 const Overview = () => {
   return (
-    <div className="h-screen flex m-3 flex-wrap gap-0">
+    <div className="flex m-3 flex-wrap gap-0 mb-48">
       <div className="lg:ml-8 xl:ml-20 w-full md:w-1/2 h-fit">
         <h1 className="text-4xl lg:text-5xl font-extrabold">
           {" "}
@@ -61,7 +61,12 @@ const Overview = () => {
       </div>
       <div className="h-full m-auto lg:mr-8 xl:mr-20">
         <div className="w-80 lg:w-96 aspect-square relative mt-2">
-          <Image src="/images/headshot.png" alt="headshot" fill />
+          <Image
+            src="/images/headshot.png"
+            className="rounded-full colored-shadow"
+            alt="headshot"
+            fill
+          />
         </div>
       </div>
     </div>
