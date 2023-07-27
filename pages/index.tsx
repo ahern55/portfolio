@@ -23,7 +23,7 @@ const Home: NextPage = () => {
           </div>
           <Overview />
           <Timeline />
-          <div className="spacer h-screen">TEST2</div>
+          <div className="spacer h-screen"></div>
           <div className="spacer h-screen"></div>
           <div className="spacer h-screen"></div>
         </div>
