@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import NavBar from "@/components/nav/navbar";
+import NavBar from "@/components/nav/Navbar";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Overview from "@/components/Overview";

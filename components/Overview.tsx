@@ -1,7 +1,7 @@
 import Image from "next/image";
-import InstagramIcon from "./icons/instagramIcon";
-import GitHubIcon from "./icons/gitHubIcon";
-import LinkedInIcon from "./icons/linkedInIcon";
+import InstagramIcon from "./icons/InstagramIcon";
+import GitHubIcon from "./icons/GitHubIcon";
+import LinkedInIcon from "./icons/LinkedInIcon";
 import Link from "next/link";
 import {
   gitHubLink,

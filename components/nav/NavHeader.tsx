@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ExternalLinkIcon from "../icons/externalLinkIcon";
+import ExternalLinkIcon from "../icons/ExternalLinkIcon";
 
 const NavHeader = ({
   text,
