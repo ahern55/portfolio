@@ -3,7 +3,7 @@ import TimelineEntry from "./TimelineEntry";
 
 const Timeline = () => {
   return (
-    <div className="spacer min-h-screen flex flex-wrap">
+    <div className="min-h-screen flex flex-wrap">
       <div className="mx-auto mt-0 text-4xl lg:text-5xl mb-10">
         A Brief Resume...
       </div>
