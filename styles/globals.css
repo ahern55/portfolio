@@ -16,12 +16,23 @@
     @apply highlight-link border-primary-text hover:border-primary-text-highlight dark:hover:border-primary-text-highlight-dark  dark:border-primary-text-dark;
   }
 
-  .colored-border {
+  .highlight-border {
     @apply border border-primary-text dark:border-primary-text-dark;
   }
 
   .colored-shadow {
     @apply shadow-2xl shadow-gradient-purple dark:shadow-gradient-first-dark;
+  }
+
+  .secondary {
+    @apply text-secondary-text dark:text-secondary-text-dark;
+  }
+  .secondary-border {
+    @apply border-secondary-text dark:border-secondary-text-dark;
+  }
+
+  .gradient-button {
+    @apply colored-shadow hover:shadow-2xl rounded-md bg-gradient-to-br from-secondary-text to-secondary-text dark:from-gradient-purple dark:to-gradient-pink text-primary-text-unhighlighted-dark dark:text-primary-text hover:text-primary-text-highlight-dark dark:hover:text-primary-text-highlight;
   }
 
   a {
