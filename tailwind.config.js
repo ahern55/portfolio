@@ -2,6 +2,7 @@ const colors = require("tailwindcss/colors");
 
 const primaryPink = "#fbc8d4";
 const primaryPurple = "#9795f0";
+const secondaryLight = "#3b2ea6";
 const primaryDarkBlue = colors.slate[900];
 const primaryDarkGray = colors.gray[700];
 
@@ -24,8 +25,10 @@ module.exports = {
         "gradient-second-dark": primaryDarkGray,
 
         "primary-text": primaryDarkBlue,
+        "secondary-text": secondaryLight,
         "primary-text-highlight": primaryWhite,
         "primary-text-dark": primaryWhite,
+        "secondary-text-dark": primaryPink,
         "primary-text-unhighlighted-dark": colors.gray[300],
         "primary-text-highlight-dark": colors.white,
 

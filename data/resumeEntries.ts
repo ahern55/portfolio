@@ -8,7 +8,7 @@ export declare type resumeEntry = {
 
 const resumeEntries: resumeEntry[] = [
   {
-    title: "Intern, Host",
+    title: "Host & Video Production Intern",
     subtitle: "Classic Teleproductions",
     dateString: "2017-2019",
   },
@@ -24,7 +24,7 @@ const resumeEntries: resumeEntry[] = [
   },
   {
     title: "Teaching Assistant",
-    subtitle: "Fundamentals of Engineering for Honors (FEH)",
+    subtitle: "Ohio State College of Engineering",
     dateString: "2020-Present",
   },
   {
@@ -41,6 +41,11 @@ const resumeEntries: resumeEntry[] = [
     title: "Graduated B.S. Computer Science",
     subtitle: "Ohio State University",
     dateString: "December 2022",
+  },
+  {
+    title: "Software Engineer",
+    subtitle: "Palantir",
+    dateString: "August 2023 - Present",
   },
 ];
 

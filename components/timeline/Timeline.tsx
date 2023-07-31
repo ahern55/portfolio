@@ -1,6 +1,7 @@
 import resumeEntries from "@/data/resumeEntries";
 import TimelineEntry from "./TimelineEntry";
 import ChevronRightIcon from "../icons/ChevronRightIcon";
+import Link from "next/link";
 
 const Timeline = () => {
   return (
@@ -11,7 +12,7 @@ const Timeline = () => {
 
       <div className="container mx-auto h-full w-full">
         <div className="wrap relative h-full overflow-visible p-2">
-          <div className="timeline-line border-2-2 right-9/10 absolute h-full translate-x-1/2 border colored-border border-opacity-60 md:right-1/2"></div>
+          <div className="timeline-line border-2-2 right-9/10 absolute h-full translate-x-1/2 border highlight-border border-opacity-60 md:right-1/2"></div>
           <div className="sticky top-[40%] pb-[6%] lg:pb-[2%]">
             <div className="timeline-chevron-right right-9/10 absolute md:translate-x-full md:right-1/2">
               <ChevronRightIcon />
@@ -27,6 +28,21 @@ const Timeline = () => {
               index={index}
             />
           ))}
+        </div>
+      </div>
+      <div className="w-full mt-10">
+        <div className="w-fit mx-auto">
+          <Link
+            target="_blank"
+            href="https://nbviewer.org/github/ahern55/resume/blob/main/resume.pdf"
+          >
+            <button
+              type="button"
+              className="p-3 gradient-button rounded-md text-xl"
+            >
+              Download Resume
+            </button>
+          </Link>
         </div>
       </div>
     </div>
