@@ -35,6 +35,10 @@
     @apply colored-shadow hover:shadow-2xl rounded-md bg-gradient-to-br from-secondary-text to-secondary-text dark:from-gradient-purple dark:to-gradient-pink text-primary-text-unhighlighted-dark dark:text-primary-text hover:text-primary-text-highlight-dark dark:hover:text-primary-text-highlight;
   }
 
+  .title {
+    /* @apply  */
+  }
+
   a {
     @apply text-link hover:text-link-hover dark:text-link-dark dark:hover:text-link-dark-hover hover:underline;
   }

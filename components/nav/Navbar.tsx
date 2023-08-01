@@ -6,7 +6,7 @@ import { largeScreenWidthPixels } from "@/utils/screenSizes";
 import NavHeader from "./NavHeader";
 import { gitHubLink } from "@/data/externalLinks";
 
-const NavBar = () => {
+const NavBar = (props: { fade?: boolean }) => {
   const { toggleColorTheme } = useColorTheme();
   const ref = useRef<HTMLDivElement>(null);
 
@@ -16,7 +16,7 @@ const NavBar = () => {
         ? window.innerHeight / 1.8
         : "top top";
     const element = ref.current;
-    if (element) {
+    if (element && props.fade === true) {
       gsap.fromTo(
         element.querySelector("#nav-bar"),
         {
@@ -42,11 +42,11 @@ const NavBar = () => {
     <div ref={ref}>
       <nav
         className="flex w-full p-3 fixed top-0 z-50"
-        style={{ visibility: "hidden" }}
+        style={{ visibility: props.fade ? "hidden" : "visible" }}
         id="nav-bar"
       >
         <ul className="flex">
-          <NavHeader text="About" url="/about" />
+          <NavHeader text="Home" url="/" />
           <NavHeader text="Projects" url="/projects" />
           <NavHeader text="Github" external url={gitHubLink} />
         </ul>
