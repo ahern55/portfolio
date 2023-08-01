@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Timeline = () => {
   return (
-    <div className="min-h-screen flex flex-wrap">
+    <div className="min-h-screen flex flex-wrap mb-48">
       <div className="mx-auto mt-0 text-4xl lg:text-5xl mb-10">
         A Brief Resume...
       </div>
