@@ -14,7 +14,8 @@ const Projects: NextPage = () => {
       <main>
         <div className="min-h-screen">
           <NavBar />
-          <div className="mx-20 mt-36">
+          <div className="mx-3 md:mx-20 mt-16">
+            <div className="section-title mb-5 ml-5">Projects</div>
             <ProjectsGrid projects={projects} />
           </div>
         </div>

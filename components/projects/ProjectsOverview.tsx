@@ -5,8 +5,8 @@ import ProjectsGrid from "./ProjectsGrid";
 
 const ProjectsOverview = () => {
   return (
-    <div className="flex flex-wrap h-screen m-3">
-      <div className="lg:ml-8 xl:ml-20 text-4xl lg:text-5xl">
+    <div className="flex flex-wrap m-3 md:mx-20 pb-10">
+      <div className="text-4xl lg:text-5xl w-full mb-10 text-center">
         Highlighted Projects
       </div>
 
@@ -15,7 +15,7 @@ const ProjectsOverview = () => {
       />
 
       <div className="w-full flex text-xl">
-        <div className="mt-auto ml-auto lg:mr-8 xl:mr-20">
+        <div className="mt-auto ml-auto">
           <Link href="/projects" className="flex items-center">
             <span className="mr-1">All Projects</span>
             <LongRightArrowIcon />

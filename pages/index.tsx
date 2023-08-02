@@ -18,14 +18,13 @@ const Home: NextPage = () => {
       </Head>
       <main>
         <div>
-          <NavBar fade/>
+          <NavBar fade />
           <div className="h-screen flex" id="name-screen">
             <div className="m-auto text-5xl sm:text-6xl">Jason Ahern</div>
           </div>
           <Overview />
           <Timeline />
           <ProjectsOverview />
-          <div className="spacer h-screen"></div>
         </div>
       </main>
     </>

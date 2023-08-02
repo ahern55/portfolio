@@ -21,7 +21,7 @@
   }
 
   .colored-shadow {
-    @apply shadow-2xl shadow-gradient-purple dark:shadow-gradient-first-dark;
+    @apply shadow-gradient-purple dark:shadow-gradient-first-dark shadow-[10px_10px_15px_5px];
   }
 
   .secondary {
@@ -36,7 +36,11 @@
   }
 
   .title {
-    /* @apply  */
+    @apply text-4xl lg:text-5xl;
+  }
+
+  .section-title {
+    @apply text-3xl lg:text-4xl;
   }
 
   a {

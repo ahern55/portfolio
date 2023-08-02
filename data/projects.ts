@@ -30,13 +30,12 @@ const projects: project[] = [
     highlight: true,
     dateString: "2022",
     summary:
-      "A temnplate for a Next.js app using Firebase's auth and Firestore database",
+      "A template for a Next.js app using Firebase's auth and Firestore database",
     gitHubUrl: "https://github.com/ahern55/next-firebase-typescript",
     demoUrl: "https://next-firebase-ts.vercel.app/",
   },
   {
     name: "Your Recipes",
-    highlight: true,
     dateString: "2021",
     summary: "a simple recipe management mobile app on iOS and Android",
     gitHubUrl: "https://github.com/ahern55/recipes",
