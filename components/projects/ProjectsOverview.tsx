@@ -6,7 +6,7 @@ import ProjectsGrid from "./ProjectsGrid";
 const ProjectsOverview = () => {
   return (
     <div className="flex flex-wrap m-3 md:mx-20 pb-10">
-      <div className="text-4xl lg:text-5xl w-full mb-10 text-center">
+      <div className="text-3xl lg:text-5xl w-full mb-10 text-center">
         Highlighted Projects
       </div>
 
