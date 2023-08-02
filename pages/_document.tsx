@@ -5,6 +5,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <script src="theme.js"></script>
           <link rel="icon" href="/favicon.ico" />
           <link
             rel="stylesheet"
