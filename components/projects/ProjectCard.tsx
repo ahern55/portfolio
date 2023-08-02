@@ -22,7 +22,7 @@ const ProjectCard = (props: { project: project }) => {
                 <Link
                   href={props.project.gitHubUrl}
                   target="_blank"
-                  className="mb-0 h-fit highlight-link mr-3"
+                  className="mb-0 h-fit highlight-link"
                 >
                   <GitHubIcon />
                 </Link>
@@ -31,7 +31,7 @@ const ProjectCard = (props: { project: project }) => {
                 <Link
                   href={props.project.demoUrl}
                   target="_blank"
-                  className="mb-0 h-fit highlight-link"
+                  className="mb-0 h-fit highlight-link ml-3"
                 >
                   <RocketIcon />
                 </Link>

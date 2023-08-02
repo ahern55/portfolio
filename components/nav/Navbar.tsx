@@ -42,7 +42,7 @@ const NavBar = (props: { fade?: boolean }) => {
     <div ref={ref}>
       <nav
         className="flex w-full p-3 fixed top-0 z-50"
-        style={{ visibility: props.fade ? "hidden" : "visible" }}
+        style={{ visibility: props.fade === true ? "hidden" : "visible" }}
         id="nav-bar"
       >
         <ul className="flex">

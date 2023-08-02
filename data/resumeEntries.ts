@@ -1,5 +1,5 @@
 export declare type resumeEntry = {
-title: string;
+  title: string;
   subtitle: string;
   dateString: string;
   //markdown

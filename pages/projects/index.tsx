@@ -12,9 +12,9 @@ const Projects: NextPage = () => {
         <meta property="og:title" content="Projects" key="title" />
       </Head>
       <main>
-        <div className="min-h-screen">
+        <div className="min-h-screen pt-16">
           <NavBar />
-          <div className="mx-3 md:mx-20 mt-16">
+          <div className="mx-3 md:mx-20">
             <div className="section-title mb-5 ml-5">Projects</div>
             <ProjectsGrid projects={projects} />
           </div>
