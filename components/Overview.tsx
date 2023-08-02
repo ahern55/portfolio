@@ -15,7 +15,7 @@ const Overview = () => {
   return (
     <div className="flex m-3 flex-wrap gap-0 mb-48">
       <div className="lg:ml-8 xl:ml-20 w-full md:w-1/2 h-fit">
-        <h1 className="text-4xl lg:text-5xl font-extrabold">
+        <h1 className="title font-extrabold">
           {" "}
           Hello! I'm Jason 👋
         </h1>

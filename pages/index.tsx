@@ -5,6 +5,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Overview from "@/components/Overview";
 import Timeline from "@/components/timeline/Timeline";
+import ProjectsOverview from "@/components/projects/ProjectsOverview";
 
 const Home: NextPage = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -17,15 +18,13 @@ const Home: NextPage = () => {
       </Head>
       <main>
         <div>
-          <NavBar />
+          <NavBar fade />
           <div className="h-screen flex" id="name-screen">
             <div className="m-auto text-5xl sm:text-6xl">Jason Ahern</div>
           </div>
           <Overview />
           <Timeline />
-          <div className="spacer h-screen"></div>
-          <div className="spacer h-screen"></div>
-          <div className="spacer h-screen"></div>
+          <ProjectsOverview />
         </div>
       </main>
     </>
